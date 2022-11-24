@@ -6,8 +6,8 @@
 
 <script>
 export default {
-  name: 'CentralComp'
-}
+  name: 'CentralComp',
+};
 </script>
 
 <style>

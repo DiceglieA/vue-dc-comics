@@ -4,16 +4,21 @@
     <CentralComp />
     <FooterComp />
   </div>
-
 </template>
 
 <script>
 import HeaderComp from '@/components/HeaderComp.vue';
 import CentralComp from '@/components/CentralComp.vue';
 import FooterComp from '@/components/FooterComp.vue';
-export default {
 
-}
+export default {
+  name: 'App',
+  components: {
+    HeaderComp,
+    CentralComp,
+    FooterComp,
+  },
+};
 </script>
 
 <style>
@@ -25,5 +30,9 @@ export default {
 
 ul {
   list-style-type: none;
+}
+
+a {
+  text-decoration: none;
 }
 </style>
