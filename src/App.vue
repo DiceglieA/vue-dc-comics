@@ -28,6 +28,11 @@ export default {
   box-sizing: border-box;
 }
 
+.container {
+  width: 70%;
+  margin: auto;
+}
+
 ul {
   list-style-type: none;
 }
