@@ -1,6 +1,6 @@
 <template>
   <header>
-    <nav>
+    <nav class="container">
       <div>
         <img src="../assets/img/dc-logo.png" alt="logo">
       </div>
@@ -52,7 +52,7 @@ export default {
 <style lang="scss" scoped>
  nav {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
  }
 
  ul {
