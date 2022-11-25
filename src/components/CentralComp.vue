@@ -1,12 +1,19 @@
 <template>
   <main>
     <div class="dynamic-main">
+      <div class="jumbo"></div>
+      <div class="start">
+        <button>CURRENT SERIES</button>
+      </div>
       <div class="container cards">
         <CardComp
         v-for="(elem, index) in arrCard"
         :key="index"
         :card="elem"
         />
+      </div>
+      <div class="btn-container">
+        <button>LOAD MORE</button>
       </div>
     </div>
     <div class="blue-cards">
@@ -129,7 +136,6 @@ export default {
 .dynamic-main {
   color: white;
   background-color: #1b1c1d;
-  padding: 1.8rem;
   font-size: 30px;
 }
 
@@ -151,12 +157,40 @@ export default {
     }
 }
 
+.jumbo{
+  background-image: url('../assets/img/jumbotron.jpg');
+  height: 400px;
+  background-repeat: no-repeat;
+}
+
 .cards {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem;
   padding: 0 15px;
   font-size: 12px;
+}
+
+.btn-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  margin-left: 3rem;
+  margin-top: -2.5rem;
+}
+
+button {
+  background-color: #2F79F7;
+  color: white;
+  font-size: 15px;
+  padding: 10px 45px;
+  margin: 20px;
 }
 
 li {
