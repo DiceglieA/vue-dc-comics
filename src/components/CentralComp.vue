@@ -56,8 +56,9 @@ export default {
 .loghi {
     color: white;
     padding: 20px;
+    font-size: 10px;
     img{
-        width: 60px;
+        width: 40px;
         vertical-align: middle;
         padding: 10px;
     }

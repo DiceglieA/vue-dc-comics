@@ -61,7 +61,8 @@ export default {
  }
 
  li {
-  margin: 0 10px;
+  margin: 0 8px;
+  font-size: 10px;
  }
 
  a {
