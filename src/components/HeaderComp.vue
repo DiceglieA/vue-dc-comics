@@ -5,38 +5,11 @@
         <img src="../assets/img/dc-logo.png" alt="logo">
       </div>
       <ul>
-        <li>
-          <a href="#!">CHARACTERS</a>
-        </li>
-        <li>
-          <a href="#!">COMICS</a>
-        </li>
-        <li>
-          <a href="#!">MOVIES</a>
-        </li>
-        <li>
-          <a href="#!">TV</a>
-        </li>
-        <li>
-          <a href="#!">GAMES</a>
-        </li>
-        <li>
-          <a href="#!">COLLECTIBLES</a>
-        </li>
-        <li>
-          <a href="#!">SHOP</a>
-        </li>
-        <li>
-          <a href="#!">VIDEOS</a>
-        </li>
-        <li>
-          <a href="#!">FANS</a>
-        </li>
-        <li>
-          <a href="#!">NEWS</a>
-        </li>
-        <li>
-          <a href="#!">SHOP</a>
+        <li
+          v-for="eleMenu in arrMenu"
+          :key="eleMenu.text"
+        >
+          <a :href="eleMenu.url">{{ eleMenu.text }}</a>
         </li>
       </ul>
     </nav>
@@ -46,6 +19,52 @@
 <script>
 export default {
   name: 'HeaderComp',
+  data() {
+    return {
+      arrMenu: [
+        {
+          url: '#CHARACTERS',
+          text: 'CHARACTERS',
+        },
+        {
+          url: '#COMICS',
+          text: 'COMICS',
+        },
+        {
+          url: '#MOVIES',
+          text: 'MOVIES',
+        },
+        {
+          url: '#TV',
+          text: 'TV',
+        },
+        {
+          url: '#GAMES',
+          text: 'GAMES',
+        },
+        {
+          url: '#COLLECTIBLES',
+          text: 'COLLECTIBLES',
+        },
+        {
+          url: '#VIDEOS',
+          text: 'VIDEOS',
+        },
+        {
+          url: '#FANS',
+          text: 'FANS',
+        },
+        {
+          url: '#NEWS',
+          text: 'NEWS',
+        },
+        {
+          url: '#SHOP',
+          text: 'SHOP',
+        },
+      ],
+    };
+  },
 };
 </script>
 
